@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fix Movie</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="title-logo">
+        <span style="font-weight: 800">Fix</span> Movie
+      </div>
+      <ul>
+        <li>
+          <a href="#home" class="nav-active" onclick="return setActiveMenu()">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#trending" onclick="return setActiveMenu()"> Trending </a>
+        </li>
+        <li>
+          <a href="#popular" onclick="return setActiveMenu()"> Popular </a>
+        </li>
+        <li>
+          <a href="#toprated" onclick="return setActiveMenu()"> Top Rated </a>
+        </li>
+      </ul>
+      <div class="button-search">
+        <input type="text" placeholder="Search Movie" />
+        <button type="submit">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <section id="home"><p>Home</p></section>
+    <section id="trending"><p>Tranding</p></section>
+    <section id="popular"><p>Pupular</p></section>
+    <section id="toprated"><p>Top Rated</p></section>
+
+    <footer>
+      <ul>
+        <li><a href="">instagram</a></li>
+        <li><a href="">linkedin</a></li>
+        <li><a href="">github</a></li>
+      </ul>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
