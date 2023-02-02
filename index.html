@@ -8,54 +8,74 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav>
-      <div class="title-logo">
-        <span style="font-weight: 800">Fix</span> Movie
-      </div>
-      <ul>
-        <li>
-          <a href="#home" class="nav-active" onclick="return setActiveMenu()">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#trending" onclick="return setActiveMenu()"> Trending </a>
-        </li>
-        <li>
-          <a href="#popular" onclick="return setActiveMenu()"> Popular </a>
-        </li>
-        <li>
-          <a href="#toprated" onclick="return setActiveMenu()"> Top Rated </a>
-        </li>
-      </ul>
-      <div class="button-search">
-        <input type="text" placeholder="Search Movie" />
-        <button type="submit">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-search"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-            ></path>
-          </svg>
-        </button>
-      </div>
-    </nav>
-    <section id="home"><p>Home</p></section>
-    <section id="trending"><p>Tranding</p></section>
-    <section id="popular"><p>Pupular</p></section>
-    <section id="toprated"><p>Top Rated</p></section>
+    <header>
+      <nav>
+        <div class="title-logo">
+          <span style="font-weight: 800">FIX</span>MOVIE
+        </div>
+        <ul>
+          <li>
+            <a href="#home" class="nav-active" onclick="setActiveMenu()">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#trending" onclick="setActiveMenu()"> Trending </a>
+          </li>
+          <li>
+            <a href="#popular" onclick="setActiveMenu()"> Popular </a>
+          </li>
+          <li>
+            <a href="#toprated" onclick="setActiveMenu()"> Top Rated </a>
+          </li>
+        </ul>
+        <div class="button-search">
+          <input type="text" placeholder="Search Movie" />
+          <button type="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div class="slider">
+          <div class="slider--content">
+            <button class="slider__btn-left">
+              <img src="img/left.svg" alt="Left Button" />
+            </button>
+            <div class="slider--feature">
+              <h1 class="slider--title">Tasty</h1>
+              <p class="slider--text"></p>
+              <button class="slider--btn">Get started</button>
+            </div>
+            <button class="slider__btn-right">
+              <img src="img/right.svg" alt="Right Button" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="trending"><p>Trending</p></section>
+      <section id="popular"><p>Pupular</p></section>
+      <section id="toprated"><p>Top Rated</p></section>
+    </main>
 
     <footer>
       <ul>
-        <li><a href="">instagram</a></li>
-        <li><a href="">linkedin</a></li>
-        <li><a href="">github</a></li>
+        <li><a href="https://instagram.com" target="_blank">instagram</a></li>
+        <li><a href="https://linkedin.com" target="_blank">linkedin</a></li>
+        <li><a href="https://github.com" target="_blank">github</a></li>
       </ul>
     </footer>
 
